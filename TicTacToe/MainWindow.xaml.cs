@@ -46,7 +46,6 @@ namespace TicTacToe
             startBtn.Visibility = Visibility.Hidden;
             playO.Visibility = Visibility.Hidden;
             playX.Visibility = Visibility.Hidden;
-            Choose.Visibility = Visibility.Hidden;
             foreach (Button b in GameGrid.Children)
             {
                 buttons.Add(b);
@@ -59,6 +58,7 @@ namespace TicTacToe
         {
             startBtn.IsEnabled = true;
             playO.IsEnabled = false;
+            Choose.Visibility = Visibility.Hidden;
             player = Player.X;
         }
         /*
@@ -68,6 +68,7 @@ namespace TicTacToe
         {
             startBtn.IsEnabled = true;
             playX.IsEnabled = false;
+            Choose.Visibility = Visibility.Hidden;
             player = Player.O;
         }
 
